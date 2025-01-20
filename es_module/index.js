@@ -1,7 +1,7 @@
 // const math = require('./math');
 import { add, sub, mult, div, modulo } from "./maths.js";
 
-console.log(add(500077778888, 187650));
+console.log(add(5000778888, 187650));
 console.log(sub(10000000, 5));
 console.log(mult(994, 79));
 console.log(div(27, 9000));
