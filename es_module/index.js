@@ -2,7 +2,7 @@
 import { add, sub, mult, div, modulo } from "./maths.js";
 
 console.log(add(500077778888, 187650));
-console.log(sub(100000000, 5));
+console.log(sub(10000000, 5));
 console.log(mult(994, 79));
 console.log(div(27, 9000));
 console.log(modulo(28776689, 87));
