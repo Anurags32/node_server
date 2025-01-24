@@ -16,6 +16,7 @@ const fliecreation = () => {
                 } else {
                     console.log(`File ${filename}.txt created sussfully`);
                 }
+                r1.close();
             });
         });
     });
