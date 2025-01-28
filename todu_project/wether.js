@@ -24,6 +24,6 @@ const getWeather = async (city) => {
 
     }
 }
-const city = await r1.question('Enter a city name to get its wather:');
+const city = await r1.question('Enter a city name to get its water:');
 await getWeather(city);
 r1.close();
