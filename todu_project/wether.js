@@ -16,6 +16,10 @@ const getWeather = async (city) => {
         if (!response.ok) {
             throw new Error("city not found, plese chek the city name.");
         }
+        const weatherData = await response.json();
+        console.log('\nWether Information:');
+        console.log(`City: ${weatherData.name}`);
+        console.log(`Temperature: ${weatherData.main.temp}c`);
     } catch (error) {
 
     }
