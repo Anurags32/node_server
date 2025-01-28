@@ -25,7 +25,7 @@ https.get(url, (response) => {
             r1.question("Enter the targat currency (e.g.,INR, EUR,NPR): ", (currency) => {
                 const rate = rates[currency.toUpperCase()];
                 if (rate) {
-                    console.log(`${amount}USD is approximately ${convertCurrency(amount, rate)} ${currency}`)
+                    console.log(chalk.blue.bgGreen.bold(`${amount}USD is approximately ${convertCurrency(amount, rate)} ${currency}`))
                 } else {
                     console.log("invalid currency");
                 }
