@@ -10,6 +10,14 @@ app.get("/", (req, res) => {
     res.send("Hii Anurag Tiwari");
 });
 app.get("/second", (req, res) => { res.send("<h1>hello word<h1>") });
+app.get('/profile/:usern', (req, res) => {
+    console.log(req.params);
+    res.send("this is profile page");
+});
+app.get('/multi/:username/article/:slug', (req, res) => {
+    const formatedSlug = req.params.slug.replace(/-/g, " ");
+    res.send(`<h1>Article ${req.params.username} by ${formatedSlug}</h1>`);
+});
 const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Server is running this port:${PORT}`);
