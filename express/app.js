@@ -18,6 +18,10 @@ app.get('/multi/:username/article/:slug', (req, res) => {
     const formatedSlug = req.params.slug.replace(/-/g, " ");
     res.send(`<h1>Article ${req.params.username} by ${formatedSlug}</h1>`);
 });
+app.get("/product", (req, res) => {
+    console.log(req.query);
+    res.send(`<h1>${req.query.search} is Product Page</h1>`);
+});
 const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Server is running this port:${PORT}`);
